@@ -6,6 +6,8 @@ import MiniGames from "../components/Gamification/MiniGames";
 import Badges from "../components/Dashboard/Badges";
 import Leaderboard from "../components/Leaderboard/Leaderboard";
 import "./styles.css";
+import MotivationCard from "../components/Dashboard/MotivationCard";
+import DailyGoal from "../components/Dashboard/DailyGoal";
 
 const Dashboard = () => {
   return (
@@ -38,6 +40,14 @@ const Dashboard = () => {
       <div className="card">
         <Badges />
         <div className="card-title">Achievement Badges</div>
+      </div>
+      <div className="card">
+        <MotivationCard/>
+        <div className="card-title">Quote of the Day</div>
+      </div>
+      <div className="card">
+        <DailyGoal/>
+        <div className="card-title">Daily Goals</div>
       </div>
 
       <div className="card leaderboard-full">
